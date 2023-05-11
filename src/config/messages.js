@@ -1,0 +1,41 @@
+'use strict';
+
+const messages = {
+
+  /*
+   * WINDOW
+   */
+
+  WINDOW_RESIZE: 'WINDOW_RESIZE',
+
+  /*
+   * SPLASHSCREEN
+   */
+
+  SPLASHSCREEN_HIDE: 'SPLASHSCREEN_HIDE',
+
+  /*
+   * HOME
+   */
+
+  HOME_ADD_LISTENERS: 'HOME_ADD_LISTENERS',
+  HOME_REMOVE_LISTENERS: 'HOME_REMOVE_LISTENERS',
+
+  /*
+   * PROJECT
+   */
+
+  PROJECT_CHANGE: 'PROJECT_CHANGE',
+
+  /*
+   * ABOUT
+   */
+
+  ABOUT_OPEN: 'ABOUT_OPEN',
+  ABOUT_CLOSE: 'ABOUT_CLOSE',
+  ABOUT_AFTER_OPEN: 'ABOUT_AFTER_OPEN',
+  ABOUT_AFTER_CLOSE: 'ABOUT_AFTER_CLOSE'
+
+};
+
+module.exports = messages;

@@ -1,0 +1,83 @@
+@import '~stylesheets/common/variables';
+
+.project-title {
+  position: absolute;
+  width: 250px;
+  top: 16.05%;
+  right: 100%;
+  margin-right: 3.5rem;
+  overflow: hidden;
+  height: 45px;
+  z-index: 10;
+  .project-title__el {
+    top: 0;
+    font-size: 4rem;
+    text-align: right;
+    display: none;
+    color: $color-red;
+    font-weight: bold;
+    white-space: nowrap;
+
+    &--is-active {
+      display: block;
+    }
+
+    &--is-previous {
+      display: block;
+      position: absolute;
+      top :0;
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .project-title {
+    top: 18.25%;
+    .project-title__el {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-title {
+    top: -5.5rem;
+    left: -0.1rem;
+    right: auto;
+    .project-title__el {
+      text-align: left;
+      &--is-previous {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 736px){
+  .project-title {
+    top: -3.7rem;
+    height: 34px;
+  }
+}
+
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+  .project-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 0 1rem 0;
+
+    .project-title__el {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .project-title {
+    margin: 0;
+    height: 30px;
+  }
+}

@@ -1,0 +1,41 @@
+@import '~stylesheets/common/variables';
+
+.project-links {
+  position: absolute;
+  top: 100%;
+  left:0;
+  margin-top: 1.5rem;
+  .project-links__el {
+    display: none;
+    &--is-active {
+      display: block;
+    }
+  }
+
+  .project-links__el-link {
+    margin-left: 2.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .project-links {
+    .project-links__el-link {
+      font-size: 1.4rem;
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+
+  .project-links {
+    position: static;
+    top: auto;
+    left: 0;
+    bottom: auto;
+  }
+}
